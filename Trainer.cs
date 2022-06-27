@@ -24,6 +24,8 @@ namespace FICS_DB
         {
             label_name.Text = Program.ExecuteQuerySingleValue(
                 "select p.fullname " + "from person p where p.id = " + trainer_id.ToString());
+            //Program.ExecuteTableQuery(ref dataGrid_students,
+            //    "select p.fullname, from person p join trainer t on p.id = t.trainer_id where persontype = 'S' and t.id = " + trainer_id.ToString())
             Utility.Success(ref label_status, "Welcome " + Program.ExecuteQuerySingleValue(
                 "select p.name " + "from person p where p.id = " + trainer_id.ToString()) + "!");
         }

@@ -53,12 +53,16 @@
             this.button8 = new System.Windows.Forms.Button();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.label_status = new System.Windows.Forms.ToolStripStatusLabel();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.dataGrid_students = new System.Windows.Forms.DataGridView();
             this.toolStrip1.SuspendLayout();
             this.toolStrip2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.group_students.SuspendLayout();
             this.table_tasks.SuspendLayout();
             this.statusStrip1.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGrid_students)).BeginInit();
             this.SuspendLayout();
             // 
             // toolStrip1
@@ -325,9 +329,33 @@
             this.label_status.Size = new System.Drawing.Size(98, 17);
             this.label_status.Text = "Welcome XXXXX!";
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.Controls.Add(this.dataGrid_students);
+            this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.groupBox1.Location = new System.Drawing.Point(15, 314);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(751, 90);
+            this.groupBox1.TabIndex = 27;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Students_Assigned";
+            // 
+            // dataGrid_students
+            // 
+            this.dataGrid_students.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGrid_students.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGrid_students.Location = new System.Drawing.Point(3, 25);
+            this.dataGrid_students.Name = "dataGrid_students";
+            this.dataGrid_students.RowTemplate.Height = 25;
+            this.dataGrid_students.Size = new System.Drawing.Size(745, 62);
+            this.dataGrid_students.TabIndex = 0;
+            // 
             // Trainer
             // 
             this.ClientSize = new System.Drawing.Size(784, 439);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.group_students);
             this.Controls.Add(this.pictureBox1);
@@ -348,6 +376,8 @@
             this.table_tasks.ResumeLayout(false);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGrid_students)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -379,5 +409,7 @@
         private Button button8;
         private StatusStrip statusStrip1;
         private ToolStripStatusLabel label_status;
+        private GroupBox groupBox1;
+        private DataGridView dataGrid_students;
     }
 }

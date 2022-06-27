@@ -28,7 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.GroupBox group_sessions_upcoming;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Teacher));
+            this.dataGrid_sessions_upcoming = new System.Windows.Forms.DataGridView();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripDropDownButton1 = new System.Windows.Forms.ToolStripDropDownButton();
             this.logOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -37,20 +39,42 @@
             this.label_status = new System.Windows.Forms.ToolStripStatusLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label_name = new System.Windows.Forms.Label();
-            this.group_sessions_upcoming = new System.Windows.Forms.GroupBox();
-            this.dataGrid_sessions_upcoming = new System.Windows.Forms.DataGridView();
             this.group_sessions_previous = new System.Windows.Forms.GroupBox();
             this.dataGrid_sessions_previous = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            group_sessions_upcoming = new System.Windows.Forms.GroupBox();
+            group_sessions_upcoming.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGrid_sessions_upcoming)).BeginInit();
             this.toolStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.group_sessions_upcoming.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGrid_sessions_upcoming)).BeginInit();
             this.group_sessions_previous.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGrid_sessions_previous)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // group_sessions_upcoming
+            // 
+            group_sessions_upcoming.Controls.Add(this.dataGrid_sessions_upcoming);
+            group_sessions_upcoming.Dock = System.Windows.Forms.DockStyle.Fill;
+            group_sessions_upcoming.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            group_sessions_upcoming.Location = new System.Drawing.Point(3, 3);
+            group_sessions_upcoming.Name = "group_sessions_upcoming";
+            group_sessions_upcoming.Size = new System.Drawing.Size(720, 128);
+            group_sessions_upcoming.TabIndex = 20;
+            group_sessions_upcoming.TabStop = false;
+            group_sessions_upcoming.Text = "Upcoming Sessions:";
+            // 
+            // dataGrid_sessions_upcoming
+            // 
+            this.dataGrid_sessions_upcoming.AllowUserToOrderColumns = true;
+            this.dataGrid_sessions_upcoming.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGrid_sessions_upcoming.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGrid_sessions_upcoming.Location = new System.Drawing.Point(3, 19);
+            this.dataGrid_sessions_upcoming.Name = "dataGrid_sessions_upcoming";
+            this.dataGrid_sessions_upcoming.RowTemplate.Height = 25;
+            this.dataGrid_sessions_upcoming.Size = new System.Drawing.Size(714, 106);
+            this.dataGrid_sessions_upcoming.TabIndex = 1;
             // 
             // toolStrip1
             // 
@@ -126,34 +150,11 @@
             this.label_name.TabIndex = 18;
             this.label_name.Text = "FULLNAME FULLNAME";
             // 
-            // group_sessions_upcoming
-            // 
-            this.group_sessions_upcoming.Controls.Add(this.dataGrid_sessions_upcoming);
-            this.group_sessions_upcoming.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.group_sessions_upcoming.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.group_sessions_upcoming.Location = new System.Drawing.Point(3, 3);
-            this.group_sessions_upcoming.Name = "group_sessions_upcoming";
-            this.group_sessions_upcoming.Size = new System.Drawing.Size(720, 128);
-            this.group_sessions_upcoming.TabIndex = 20;
-            this.group_sessions_upcoming.TabStop = false;
-            this.group_sessions_upcoming.Text = "Upcoming Sessions:";
-            // 
-            // dataGrid_sessions_upcoming
-            // 
-            this.dataGrid_sessions_upcoming.AllowUserToOrderColumns = true;
-            this.dataGrid_sessions_upcoming.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGrid_sessions_upcoming.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGrid_sessions_upcoming.Location = new System.Drawing.Point(3, 25);
-            this.dataGrid_sessions_upcoming.Name = "dataGrid_sessions_upcoming";
-            this.dataGrid_sessions_upcoming.RowTemplate.Height = 25;
-            this.dataGrid_sessions_upcoming.Size = new System.Drawing.Size(714, 100);
-            this.dataGrid_sessions_upcoming.TabIndex = 1;
-            // 
             // group_sessions_previous
             // 
             this.group_sessions_previous.Controls.Add(this.dataGrid_sessions_previous);
             this.group_sessions_previous.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.group_sessions_previous.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.group_sessions_previous.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.group_sessions_previous.Location = new System.Drawing.Point(3, 137);
             this.group_sessions_previous.Name = "group_sessions_previous";
             this.group_sessions_previous.Size = new System.Drawing.Size(720, 128);
@@ -166,10 +167,10 @@
             this.dataGrid_sessions_previous.AllowUserToOrderColumns = true;
             this.dataGrid_sessions_previous.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGrid_sessions_previous.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGrid_sessions_previous.Location = new System.Drawing.Point(3, 25);
+            this.dataGrid_sessions_previous.Location = new System.Drawing.Point(3, 19);
             this.dataGrid_sessions_previous.Name = "dataGrid_sessions_previous";
             this.dataGrid_sessions_previous.RowTemplate.Height = 25;
-            this.dataGrid_sessions_previous.Size = new System.Drawing.Size(714, 100);
+            this.dataGrid_sessions_previous.Size = new System.Drawing.Size(714, 106);
             this.dataGrid_sessions_previous.TabIndex = 1;
             // 
             // tableLayoutPanel1
@@ -180,7 +181,7 @@
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Controls.Add(this.group_sessions_upcoming, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(group_sessions_upcoming, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.group_sessions_previous, 0, 1);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 89);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -206,13 +207,13 @@
             this.Text = "Teacher Dashboard";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.teacher_FormClosing);
             this.Load += new System.EventHandler(this.Teacher_Load);
+            group_sessions_upcoming.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGrid_sessions_upcoming)).EndInit();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.group_sessions_upcoming.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGrid_sessions_upcoming)).EndInit();
             this.group_sessions_previous.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGrid_sessions_previous)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);

@@ -27,9 +27,39 @@ namespace FICS_DB
         {
             label_name.Text = Program.ExecuteQuerySingleValue(
                 "select p.fullname " + "from person p where p.id = " + teacher_id.ToString());
+            if (mentor_or_counsellor == 'M')
+            {
+                string sessionQuery_part1 = @"select 
+	                                        p.fullname as Student_Name, 
+	                                        ms.date_and_time as Date_and_Time, 
+	                                        ms.meeting_link as Meeting_Link ";
+                string sessionQuery_part2 = @"from mentor_session ms join person p
+                                          on ms.scholar_id = p.id where ";
+                Program.ExecuteTableQuery(ref dataGrid_sessions_upcoming,
+                    sessionQuery_part1 + sessionQuery_part2 +
+                                         "ms.date_and_time > getdate()");
+                Program.ExecuteTableQuery(ref dataGrid_sessions_previous,
+                    sessionQuery_part1 + ", ms.notes as Notes_Given " +
+                    sessionQuery_part2 + "ms.date_and_time < getdate()");
+            }
+            else
+            {
+                string sessionQuery_part1 = @"select 
+	                                        p.fullname as Student_Name, 
+	                                        cs.date_and_time as Date_and_Time, 
+	                                        cs.meeting_link as Meeting_Link ";
+                string sessionQuery_part2 = @"from counsellor_session cs join person p
+                                          on cs.scholar_id = p.id where ";
+                Program.ExecuteTableQuery(ref dataGrid_sessions_upcoming,
+                    sessionQuery_part1 + sessionQuery_part2 +
+                                         "cs.date_and_time > getdate()");
+                Program.ExecuteTableQuery(ref dataGrid_sessions_previous,
+                    sessionQuery_part1 + ", cs.advice as Advice_Given " +
+                    sessionQuery_part2 + "cs.date_and_time < getdate()");
+            }
+            this.Text = (mentor_or_counsellor == 'M' ? "Mentor" : "Counsellor") + " Dashboard";
             Utility.Success(ref label_status, "Welcome " + Program.ExecuteQuerySingleValue(
                 "select p.name " + "from person p where p.id = " + teacher_id.ToString()) + "!");
-            this.Text = (mentor_or_counsellor == 'M' ? "Mentor" : "Counsellor") + " Dashboard";
         }
         private void teacher_FormClosing(object sender, FormClosingEventArgs e) => homepage.Show();
         private void logOutToolStripMenuItem_Click(object sender, EventArgs e) => Close();
