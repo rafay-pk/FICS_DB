@@ -34,5 +34,10 @@ namespace FICS_DB
         private void logOutToolStripMenuItem_Click(object sender, EventArgs e) => Close();
         private void quitToolStripMenuItem_Click(object sender, EventArgs e) => Application.Exit();
 
+        private void button_requests_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(Program.ExecuteQuerySingleValue("select sr.request from" +
+                " scholar_request sr where sr.trainer_id =" + trainer_id.ToString()));
+        }
     }
 }

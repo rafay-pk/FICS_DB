@@ -67,6 +67,7 @@
             // 
             // toolStrip1
             // 
+            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripDropDownButton1});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
@@ -83,28 +84,29 @@
             this.toolStripDropDownButton1.Image = global::FICS_DB.Properties.Resources.categories;
             this.toolStripDropDownButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripDropDownButton1.Name = "toolStripDropDownButton1";
-            this.toolStripDropDownButton1.Size = new System.Drawing.Size(97, 22);
+            this.toolStripDropDownButton1.Size = new System.Drawing.Size(120, 22);
             this.toolStripDropDownButton1.Text = "Application";
             // 
             // logOutToolStripMenuItem
             // 
             this.logOutToolStripMenuItem.Image = global::FICS_DB.Properties.Resources.shutdown__1_;
             this.logOutToolStripMenuItem.Name = "logOutToolStripMenuItem";
-            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(145, 26);
             this.logOutToolStripMenuItem.Text = "Log Out";
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(145, 26);
             // 
             // toolStrip2
             // 
+            this.toolStrip2.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripDropDownButton2});
             this.toolStrip2.Location = new System.Drawing.Point(0, 0);
             this.toolStrip2.Name = "toolStrip2";
-            this.toolStrip2.Size = new System.Drawing.Size(784, 25);
+            this.toolStrip2.Size = new System.Drawing.Size(784, 27);
             this.toolStrip2.TabIndex = 1;
             this.toolStrip2.Text = "toolStrip2";
             // 
@@ -116,14 +118,14 @@
             this.toolStripDropDownButton2.Image = global::FICS_DB.Properties.Resources.categories;
             this.toolStripDropDownButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripDropDownButton2.Name = "toolStripDropDownButton2";
-            this.toolStripDropDownButton2.Size = new System.Drawing.Size(97, 22);
+            this.toolStripDropDownButton2.Size = new System.Drawing.Size(120, 24);
             this.toolStripDropDownButton2.Text = "Application";
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Image = global::FICS_DB.Properties.Resources.shutdown__1_;
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(117, 22);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(145, 26);
             this.toolStripMenuItem1.Text = "Log Out";
             this.toolStripMenuItem1.Click += new System.EventHandler(this.logOutToolStripMenuItem_Click);
             // 
@@ -131,7 +133,7 @@
             // 
             this.toolStripMenuItem2.Image = global::FICS_DB.Properties.Resources.failed;
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(117, 22);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(145, 26);
             this.toolStripMenuItem2.Text = "Exit";
             this.toolStripMenuItem2.Click += new System.EventHandler(this.quitToolStripMenuItem_Click);
             // 
@@ -152,7 +154,7 @@
             this.label_name.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.label_name.Location = new System.Drawing.Point(63, 28);
             this.label_name.Name = "label_name";
-            this.label_name.Size = new System.Drawing.Size(350, 45);
+            this.label_name.Size = new System.Drawing.Size(425, 54);
             this.label_name.TabIndex = 16;
             this.label_name.Text = "FULLNAME FULLNAME";
             // 
@@ -187,7 +189,7 @@
             this.table_tasks.Controls.Add(this.button7, 2, 3);
             this.table_tasks.Controls.Add(this.button8, 2, 4);
             this.table_tasks.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.table_tasks.Location = new System.Drawing.Point(3, 25);
+            this.table_tasks.Location = new System.Drawing.Point(3, 30);
             this.table_tasks.Name = "table_tasks";
             this.table_tasks.RowCount = 5;
             this.table_tasks.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
@@ -195,7 +197,7 @@
             this.table_tasks.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
             this.table_tasks.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
             this.table_tasks.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 0F));
-            this.table_tasks.Size = new System.Drawing.Size(754, 201);
+            this.table_tasks.Size = new System.Drawing.Size(754, 196);
             this.table_tasks.TabIndex = 0;
             // 
             // button5
@@ -221,6 +223,7 @@
             this.button_requests.TabIndex = 19;
             this.button_requests.Text = "Check Requests";
             this.button_requests.UseVisualStyleBackColor = true;
+            this.button_requests.Click += new System.EventHandler(this.button_requests_Click);
             // 
             // button_report
             // 
@@ -272,7 +275,7 @@
             this.button4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button4.Location = new System.Drawing.Point(457, 163);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(144, 34);
+            this.button4.Size = new System.Drawing.Size(144, 30);
             this.button4.TabIndex = 23;
             this.button4.Text = "Check Report";
             this.button4.UseVisualStyleBackColor = true;
@@ -308,25 +311,26 @@
             this.button8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button8.Location = new System.Drawing.Point(607, 163);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(144, 34);
+            this.button8.Size = new System.Drawing.Size(144, 30);
             this.button8.TabIndex = 26;
             this.button8.Text = "Check Requests";
             this.button8.UseVisualStyleBackColor = true;
             // 
             // statusStrip1
             // 
+            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.label_status});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 417);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 413);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(784, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(784, 26);
             this.statusStrip1.TabIndex = 19;
             this.statusStrip1.Text = "statusStrip1";
             // 
             // label_status
             // 
             this.label_status.Name = "label_status";
-            this.label_status.Size = new System.Drawing.Size(98, 17);
+            this.label_status.Size = new System.Drawing.Size(124, 20);
             this.label_status.Text = "Welcome XXXXX!";
             // 
             // groupBox1
@@ -346,10 +350,11 @@
             // 
             this.dataGrid_students.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGrid_students.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGrid_students.Location = new System.Drawing.Point(3, 25);
+            this.dataGrid_students.Location = new System.Drawing.Point(3, 30);
             this.dataGrid_students.Name = "dataGrid_students";
+            this.dataGrid_students.RowHeadersWidth = 51;
             this.dataGrid_students.RowTemplate.Height = 25;
-            this.dataGrid_students.Size = new System.Drawing.Size(745, 62);
+            this.dataGrid_students.Size = new System.Drawing.Size(745, 57);
             this.dataGrid_students.TabIndex = 0;
             // 
             // Trainer

@@ -10,10 +10,10 @@ namespace FICS_DB
         {
             try
             {
-                connection.ConnectionString = "Data Source=DESKTOP-J8POV6V\\RAFAYDB;" +
-                "Initial Catalog=FICS_DBPROJECT;Integrated Security=True;" +
-                "Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;" +
-                "ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+                connection.ConnectionString = "Data Source=FLAGYL\\SQLEXPRESS;" +
+                    "Initial Catalog=FICS_DBPROJECT;Integrated Security=True;" +
+                    "Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;" +
+                    "ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
                 command.Connection = connection;
             }
             catch (Exception e) { MessageBox.Show(e.Message); }

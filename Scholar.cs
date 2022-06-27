@@ -63,5 +63,15 @@ namespace FICS_DB
         private void logOutToolStripMenuItem_Click(object sender, EventArgs e) => Close();
         private void quitToolStripMenuItem_Click(object sender, EventArgs e) => Application.Exit();
 
+        private void button_report_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button_trainer_Click(object sender, EventArgs e)
+        {
+            Request request = new Request(scholar_id, ref label_status);
+            request.Show();
+        }
     }
 }

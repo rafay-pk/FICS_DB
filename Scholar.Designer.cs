@@ -72,11 +72,12 @@
             // 
             // toolStrip1
             // 
+            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripDropDownButton1});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(856, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(978, 27);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -88,14 +89,14 @@
             this.toolStripDropDownButton1.Image = global::FICS_DB.Properties.Resources.categories;
             this.toolStripDropDownButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripDropDownButton1.Name = "toolStripDropDownButton1";
-            this.toolStripDropDownButton1.Size = new System.Drawing.Size(97, 22);
+            this.toolStripDropDownButton1.Size = new System.Drawing.Size(120, 24);
             this.toolStripDropDownButton1.Text = "Application";
             // 
             // logOutToolStripMenuItem
             // 
             this.logOutToolStripMenuItem.Image = global::FICS_DB.Properties.Resources.shutdown__1_;
             this.logOutToolStripMenuItem.Name = "logOutToolStripMenuItem";
-            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(145, 26);
             this.logOutToolStripMenuItem.Text = "Log Out";
             this.logOutToolStripMenuItem.Click += new System.EventHandler(this.logOutToolStripMenuItem_Click);
             // 
@@ -103,24 +104,26 @@
             // 
             this.exitToolStripMenuItem.Image = global::FICS_DB.Properties.Resources.failed;
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(145, 26);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.quitToolStripMenuItem_Click);
             // 
             // statusStrip1
             // 
+            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.label_status});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 621);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 831);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(856, 22);
+            this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 16, 0);
+            this.statusStrip1.Size = new System.Drawing.Size(978, 26);
             this.statusStrip1.TabIndex = 13;
             this.statusStrip1.Text = "statusStrip1";
             // 
             // label_status
             // 
             this.label_status.Name = "label_status";
-            this.label_status.Size = new System.Drawing.Size(98, 17);
+            this.label_status.Size = new System.Drawing.Size(124, 20);
             this.label_status.Text = "Welcome XXXXX!";
             // 
             // label_name
@@ -128,18 +131,19 @@
             this.label_name.AutoSize = true;
             this.label_name.Font = new System.Drawing.Font("Segoe UI Light", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label_name.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.label_name.Location = new System.Drawing.Point(63, 28);
+            this.label_name.Location = new System.Drawing.Point(72, 37);
             this.label_name.Name = "label_name";
-            this.label_name.Size = new System.Drawing.Size(350, 45);
+            this.label_name.Size = new System.Drawing.Size(425, 54);
             this.label_name.TabIndex = 14;
             this.label_name.Text = "FULLNAME FULLNAME";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 28);
+            this.pictureBox1.Location = new System.Drawing.Point(14, 37);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(45, 45);
+            this.pictureBox1.Size = new System.Drawing.Size(51, 60);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
@@ -150,9 +154,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.group_tasks.Controls.Add(this.table_tasks);
             this.group_tasks.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.group_tasks.Location = new System.Drawing.Point(12, 79);
+            this.group_tasks.Location = new System.Drawing.Point(14, 105);
+            this.group_tasks.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.group_tasks.Name = "group_tasks";
-            this.group_tasks.Size = new System.Drawing.Size(832, 100);
+            this.group_tasks.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.group_tasks.Size = new System.Drawing.Size(951, 133);
             this.group_tasks.TabIndex = 16;
             this.group_tasks.TabStop = false;
             this.group_tasks.Text = "Perform Tasks:";
@@ -170,11 +176,12 @@
             this.table_tasks.Controls.Add(this.button_trainer, 1, 0);
             this.table_tasks.Controls.Add(this.button_report, 0, 0);
             this.table_tasks.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.table_tasks.Location = new System.Drawing.Point(3, 25);
+            this.table_tasks.Location = new System.Drawing.Point(3, 31);
+            this.table_tasks.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.table_tasks.Name = "table_tasks";
             this.table_tasks.RowCount = 1;
             this.table_tasks.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.table_tasks.Size = new System.Drawing.Size(826, 72);
+            this.table_tasks.Size = new System.Drawing.Size(945, 98);
             this.table_tasks.TabIndex = 0;
             // 
             // button_counsellor
@@ -182,9 +189,10 @@
             this.button_counsellor.AutoEllipsis = true;
             this.button_counsellor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button_counsellor.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button_counsellor.Location = new System.Drawing.Point(621, 3);
+            this.button_counsellor.Location = new System.Drawing.Point(711, 4);
+            this.button_counsellor.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button_counsellor.Name = "button_counsellor";
-            this.button_counsellor.Size = new System.Drawing.Size(202, 66);
+            this.button_counsellor.Size = new System.Drawing.Size(231, 90);
             this.button_counsellor.TabIndex = 20;
             this.button_counsellor.Text = "Consult Counsellor";
             this.button_counsellor.UseVisualStyleBackColor = true;
@@ -195,9 +203,10 @@
             this.button_mentor.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button_mentor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button_mentor.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button_mentor.Location = new System.Drawing.Point(415, 3);
+            this.button_mentor.Location = new System.Drawing.Point(475, 4);
+            this.button_mentor.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button_mentor.Name = "button_mentor";
-            this.button_mentor.Size = new System.Drawing.Size(200, 66);
+            this.button_mentor.Size = new System.Drawing.Size(230, 90);
             this.button_mentor.TabIndex = 19;
             this.button_mentor.Text = "Consult Mentor";
             this.button_mentor.UseVisualStyleBackColor = true;
@@ -207,24 +216,28 @@
             this.button_trainer.AutoEllipsis = true;
             this.button_trainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button_trainer.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button_trainer.Location = new System.Drawing.Point(209, 3);
+            this.button_trainer.Location = new System.Drawing.Point(239, 4);
+            this.button_trainer.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button_trainer.Name = "button_trainer";
-            this.button_trainer.Size = new System.Drawing.Size(200, 66);
+            this.button_trainer.Size = new System.Drawing.Size(230, 90);
             this.button_trainer.TabIndex = 18;
             this.button_trainer.Text = "Request Trainer";
             this.button_trainer.UseVisualStyleBackColor = true;
+            this.button_trainer.Click += new System.EventHandler(this.button_trainer_Click);
             // 
             // button_report
             // 
             this.button_report.AutoEllipsis = true;
             this.button_report.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button_report.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button_report.Location = new System.Drawing.Point(3, 3);
+            this.button_report.Location = new System.Drawing.Point(3, 4);
+            this.button_report.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button_report.Name = "button_report";
-            this.button_report.Size = new System.Drawing.Size(200, 66);
+            this.button_report.Size = new System.Drawing.Size(230, 90);
             this.button_report.TabIndex = 17;
             this.button_report.Text = "Write Report";
             this.button_report.UseVisualStyleBackColor = true;
+            this.button_report.Click += new System.EventHandler(this.button_report_Click);
             // 
             // tabControl
             // 
@@ -234,20 +247,22 @@
             this.tabControl.Controls.Add(this.tabPage_current);
             this.tabControl.Controls.Add(this.tabPage_previous);
             this.tabControl.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.tabControl.Location = new System.Drawing.Point(12, 185);
+            this.tabControl.Location = new System.Drawing.Point(14, 247);
+            this.tabControl.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
-            this.tabControl.Size = new System.Drawing.Size(832, 433);
+            this.tabControl.Size = new System.Drawing.Size(951, 577);
             this.tabControl.TabIndex = 19;
             // 
             // tabPage_current
             // 
             this.tabPage_current.Controls.Add(this.dataGrid_courses_current);
             this.tabPage_current.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tabPage_current.Location = new System.Drawing.Point(4, 30);
+            this.tabPage_current.Location = new System.Drawing.Point(4, 37);
+            this.tabPage_current.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabPage_current.Name = "tabPage_current";
-            this.tabPage_current.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage_current.Size = new System.Drawing.Size(824, 399);
+            this.tabPage_current.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tabPage_current.Size = new System.Drawing.Size(943, 536);
             this.tabPage_current.TabIndex = 0;
             this.tabPage_current.Text = "Current Courses";
             this.tabPage_current.UseVisualStyleBackColor = true;
@@ -257,10 +272,12 @@
             this.dataGrid_courses_current.AllowUserToOrderColumns = true;
             this.dataGrid_courses_current.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGrid_courses_current.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGrid_courses_current.Location = new System.Drawing.Point(3, 3);
+            this.dataGrid_courses_current.Location = new System.Drawing.Point(3, 4);
+            this.dataGrid_courses_current.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dataGrid_courses_current.Name = "dataGrid_courses_current";
+            this.dataGrid_courses_current.RowHeadersWidth = 51;
             this.dataGrid_courses_current.RowTemplate.Height = 25;
-            this.dataGrid_courses_current.Size = new System.Drawing.Size(818, 393);
+            this.dataGrid_courses_current.Size = new System.Drawing.Size(937, 528);
             this.dataGrid_courses_current.TabIndex = 1;
             // 
             // tabPage_previous
@@ -269,10 +286,11 @@
             this.tabPage_previous.Controls.Add(this.group_mentoring);
             this.tabPage_previous.Controls.Add(this.group_courses_previous);
             this.tabPage_previous.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tabPage_previous.Location = new System.Drawing.Point(4, 30);
+            this.tabPage_previous.Location = new System.Drawing.Point(4, 37);
+            this.tabPage_previous.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabPage_previous.Name = "tabPage_previous";
-            this.tabPage_previous.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage_previous.Size = new System.Drawing.Size(824, 399);
+            this.tabPage_previous.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tabPage_previous.Size = new System.Drawing.Size(943, 536);
             this.tabPage_previous.TabIndex = 1;
             this.tabPage_previous.Text = "Previous Progress";
             this.tabPage_previous.UseVisualStyleBackColor = true;
@@ -283,9 +301,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.group_counselling.Controls.Add(this.dataGrid_counselling);
             this.group_counselling.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.group_counselling.Location = new System.Drawing.Point(13, 262);
+            this.group_counselling.Location = new System.Drawing.Point(15, 349);
+            this.group_counselling.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.group_counselling.Name = "group_counselling";
-            this.group_counselling.Size = new System.Drawing.Size(805, 124);
+            this.group_counselling.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.group_counselling.Size = new System.Drawing.Size(920, 165);
             this.group_counselling.TabIndex = 23;
             this.group_counselling.TabStop = false;
             this.group_counselling.Text = "Counselling Sessions:";
@@ -295,10 +315,12 @@
             this.dataGrid_counselling.AllowUserToOrderColumns = true;
             this.dataGrid_counselling.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGrid_counselling.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGrid_counselling.Location = new System.Drawing.Point(3, 19);
+            this.dataGrid_counselling.Location = new System.Drawing.Point(3, 24);
+            this.dataGrid_counselling.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dataGrid_counselling.Name = "dataGrid_counselling";
+            this.dataGrid_counselling.RowHeadersWidth = 51;
             this.dataGrid_counselling.RowTemplate.Height = 25;
-            this.dataGrid_counselling.Size = new System.Drawing.Size(799, 102);
+            this.dataGrid_counselling.Size = new System.Drawing.Size(914, 137);
             this.dataGrid_counselling.TabIndex = 0;
             // 
             // group_mentoring
@@ -307,9 +329,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.group_mentoring.Controls.Add(this.dataGrid_mentorship);
             this.group_mentoring.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.group_mentoring.Location = new System.Drawing.Point(13, 139);
+            this.group_mentoring.Location = new System.Drawing.Point(15, 185);
+            this.group_mentoring.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.group_mentoring.Name = "group_mentoring";
-            this.group_mentoring.Size = new System.Drawing.Size(805, 120);
+            this.group_mentoring.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.group_mentoring.Size = new System.Drawing.Size(920, 160);
             this.group_mentoring.TabIndex = 22;
             this.group_mentoring.TabStop = false;
             this.group_mentoring.Text = "Mentorship Sessions:";
@@ -319,10 +343,12 @@
             this.dataGrid_mentorship.AllowUserToOrderColumns = true;
             this.dataGrid_mentorship.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGrid_mentorship.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGrid_mentorship.Location = new System.Drawing.Point(3, 19);
+            this.dataGrid_mentorship.Location = new System.Drawing.Point(3, 24);
+            this.dataGrid_mentorship.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dataGrid_mentorship.Name = "dataGrid_mentorship";
+            this.dataGrid_mentorship.RowHeadersWidth = 51;
             this.dataGrid_mentorship.RowTemplate.Height = 25;
-            this.dataGrid_mentorship.Size = new System.Drawing.Size(799, 98);
+            this.dataGrid_mentorship.Size = new System.Drawing.Size(914, 132);
             this.dataGrid_mentorship.TabIndex = 0;
             // 
             // group_courses_previous
@@ -331,9 +357,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.group_courses_previous.Controls.Add(this.dataGrid_courses_previous);
             this.group_courses_previous.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.group_courses_previous.Location = new System.Drawing.Point(13, 16);
+            this.group_courses_previous.Location = new System.Drawing.Point(15, 21);
+            this.group_courses_previous.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.group_courses_previous.Name = "group_courses_previous";
-            this.group_courses_previous.Size = new System.Drawing.Size(805, 120);
+            this.group_courses_previous.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.group_courses_previous.Size = new System.Drawing.Size(920, 160);
             this.group_courses_previous.TabIndex = 21;
             this.group_courses_previous.TabStop = false;
             this.group_courses_previous.Text = "Courses:";
@@ -343,17 +371,19 @@
             this.dataGrid_courses_previous.AllowUserToOrderColumns = true;
             this.dataGrid_courses_previous.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGrid_courses_previous.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGrid_courses_previous.Location = new System.Drawing.Point(3, 19);
+            this.dataGrid_courses_previous.Location = new System.Drawing.Point(3, 24);
+            this.dataGrid_courses_previous.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dataGrid_courses_previous.Name = "dataGrid_courses_previous";
+            this.dataGrid_courses_previous.RowHeadersWidth = 51;
             this.dataGrid_courses_previous.RowTemplate.Height = 25;
-            this.dataGrid_courses_previous.Size = new System.Drawing.Size(799, 98);
+            this.dataGrid_courses_previous.Size = new System.Drawing.Size(914, 132);
             this.dataGrid_courses_previous.TabIndex = 0;
             // 
             // Scholar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(856, 643);
+            this.ClientSize = new System.Drawing.Size(978, 857);
             this.Controls.Add(this.tabControl);
             this.Controls.Add(this.group_tasks);
             this.Controls.Add(this.pictureBox1);
@@ -361,6 +391,7 @@
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.toolStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Scholar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " Scholar Dashboard";
