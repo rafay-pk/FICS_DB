@@ -2,21 +2,21 @@ use FICS_DBPROJECT
 
 select * from person order by person.id
 
---select * from person_classifier order by person_classifier.id
+select * from person_classifier order by person_classifier.id
 
---select * from domain order by domain.id
+select * from domain order by domain.id
 
 --select * from scholar order by scholar.id
 
 --select * from trainer order by trainer.id
 
---select * from course order by course.id
+select * from course order by course.id
 
---select * from course_difficulity order by course_difficulity.rating
+select * from course_difficulity order by course_difficulity.rating
 
---select * from website order by website.id
+select * from website order by website.id
 
---select * from scholar_courses order by scholar_courses.scholar_id
+select * from scholar_courses order by scholar_courses.scholar_id
 
 --select 
 --	d.name as Category,
@@ -69,8 +69,6 @@ select
 	cs.advice as Advice_Received
 from counsellor_session cs join person p on cs.counsellor_id = p.id
 where cs.date_and_time < getdate()
-
-
 
 --select case 
 --	when exists(
